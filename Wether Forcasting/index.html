@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body>
+    <h1>Weather Forecast</h1>
+    <form action="/" method="POST">
+        <label for="ip_address">Enter IP Address:</label>
+        <input type="text" id="ip_address" name="ip_address" placeholder="e.g., 192.168.0.1" required>
+        <button type="submit">Get Forecast</button>
+    </form>
+
+    {% if forecast %}
+        <h2>Weather Forecast for {{ forecast['name'] }}</h2>
+        <p>Temperature: {{ forecast['main']['temp'] }} °C</p>
+        <p>Humidity: {{ forecast['main']['humidity'] }}%</p>
+        <p>Weather Conditions: {{ forecast['weather'][0]['description'] }}</p>
+    {% endif %}
+</body>
+</html>
