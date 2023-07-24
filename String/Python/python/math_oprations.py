@@ -1,0 +1,9 @@
+#MATH
+x=10
+y=10.5
+z=x+y
+a=x-y
+b=x*y
+c=x/y
+d=x**y
+print(z,a,b,c)
