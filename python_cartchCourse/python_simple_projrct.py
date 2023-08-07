@@ -1,5 +1,4 @@
 import sqlite3 as lite
-
 class DatabaseManage(object):
 
     def __init__(self):
