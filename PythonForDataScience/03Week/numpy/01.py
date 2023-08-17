@@ -7,6 +7,8 @@ Created on Wed Aug 16 20:33:26 2023
 
 import pandas as pd
 
+import numpy as np
+
 cars_data = pd.read_csv('Toyota.csv',index_col=0)
 
 """
@@ -27,11 +29,24 @@ cars_data.head(6)
 
 
 """
-a = cars_data.at[4,'FuelType']
+#a = cars_data.at[4,'FuelType']
 
-b = cars_data.iat[5,6]
+#b = cars_data.iat[5,6]
 
-print(a,b)
+#print(a,b)
+
+
+
+#print(cars_data.dtypes)
+
+
+
+#cars_data.info()
+
+print(np.unique(cars_data['HP']))
+
+
+
 
 
 
