@@ -29,3 +29,13 @@ lst = ['Geeks', 'For', 'Geeks', 'is', 'portal', 'for', 'Geeks']
 
 df = pd.DataFrame(lst)
 print(df)
+
+
+
+data = {'A': [1, 2, 3, 4, 5],
+        'B': [6, 7, 8, 9, 10]}
+
+df = pd.DataFrame(data)
+new_df = df.where(df > 2, other=-1)
+
+print(new_df)

@@ -9,7 +9,7 @@ import pandas as pd
 
 import numpy as np
 
-cars_data = pd.read_csv('Toyota.csv',index_col=0)
+cars_data = pd.read_csv('Toyota.csv')
 
 """
 cars_data = pd.read_csv('Toyota.csv',index_col=0)
@@ -43,7 +43,28 @@ cars_data.head(6)
 
 #cars_data.info()
 
-print(np.unique(cars_data['HP']))
+#print(np.unique(cars_data['HP']))
+
+
+# cars_data['MetColor'] = cars_data['MetColor'].astype('object')
+
+
+print(np.unique(cars_data['Doors']))
+
+# to repalce it we use 
+
+cars_data['Doors'].replace('three','3',inplace = True)
+
+cars_data['Doors'].replace('four','4',inplace = True)
+
+cars_data['Doors'].replace('five','5',inplace = True)
+
+
+cars_data['Doors'] = cars_data['Doors'].astype('int64')
+
+print(np.unique(cars_data['Doors']))
+
+
 
 
 
