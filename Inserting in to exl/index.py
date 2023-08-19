@@ -28,7 +28,7 @@ for _ in range(num_rows):
     
     data.append([srNo, ID, pre, steps, inputData, expected, actual, result ])
 
-header = ["Name", "Age", "Country"]
+header = ["Sr. No", "Text Case ID", "Test Case OBjective", "Pre-Condition" , "Steps" , "Input Data ", "Expected Result" ,"Actual Result","Pass/Fail"]
 sheet.append(header)
 
 for row in data:
