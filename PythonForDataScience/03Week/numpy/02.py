@@ -62,6 +62,7 @@ f = pd.crosstab(index = cd['Automatic'], columns = cd['FuelType'],dropna=True,no
 print(f)
 
 '''
+'''
 import pandas as pd
 
 
@@ -78,10 +79,14 @@ numerical_data = cd.select_dtypes(include=[object])
 corr_matrix = numerical_data.corr()
 
 print(corr_matrix)
+'''
 
-
-
-
+x = True
+y = 6
+if not x:
+    print("ok")
+else:
+    print("not ok")
 
 
 
