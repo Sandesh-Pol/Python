@@ -79,6 +79,7 @@ numerical_data = cd.select_dtypes(include=[object])
 corr_matrix = numerical_data.corr()
 
 print(corr_matrix)
+<<<<<<< HEAD
 '''
 
 x = True
@@ -87,6 +88,14 @@ if not x:
     print("ok")
 else:
     print("not ok")
+=======
+
+'''
+
+
+
+
+>>>>>>> 0b9e251ca57be5caf6464ca1a56242950904fb13
 
 
 
