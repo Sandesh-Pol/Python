@@ -1,6 +1,5 @@
 import sqlite3 as lite
 class DatabaseManage(object):
-
     def __init__(self):
         global con 
         try:
@@ -11,8 +10,6 @@ class DatabaseManage(object):
 
         except Exception:
             print('Unable to create db . . !')
-
-
     def insert_data(self, data):
         try:
             with con:
@@ -21,8 +18,6 @@ class DatabaseManage(object):
                 return True
         except Exception:
             return False
-
-
     def fetch_data(self):
          try:
              with con:
@@ -41,27 +36,21 @@ class DatabaseManage(object):
                 return True
         except Exception:
             return False
-
 def main():
     while True:
         print("*"*40)
         print("*\n:: COURSE MANAGEMENT :: \n")
         print("*"*40)
-
         db = DatabaseManage()
-
         print("#"*40)
         print("\n :: User Manual :: \n")
         print("#"*40)
-
         print('\nPress 1. Insert a new Course\n')
         print('Press 2. Show all courses\n')
         print('Press 3. Delete a Course (NEED ID OF COURSE)\n')
         print("#"*40)
         print("\n")
-
         choice = input('\nEnter the choice : ')
-
         if choice == "1":
             name = input('\nEnter course name : ')
             description = input('\nEnter course description : ')

@@ -13,7 +13,7 @@ while True:
             print("You can vote.")
         else:
             raise InvalideAgeException("You cannot vote.")
-        break 
+        continue
 
     except ValueError:
         print("Invalid input. Please enter a valid age (a positive integer).")
